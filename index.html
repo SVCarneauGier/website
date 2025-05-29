@@ -7,6 +7,7 @@
 	<link href="styles/index.css" rel="stylesheet"/>
 </head>
 <body>
+<script src="scripts/menu.js"></script>
 <header>
 	<div class="container flexbox">
 		<img alt="Carneau und Giertaube" class="flexitem" id="headerimg" src="img/logo.png"/>
@@ -18,12 +19,20 @@
 </header>
 
 <nav>
-	<div class="container nav-links">
-		<a href="#ueber-uns">Über uns</a>
-		<a href="#carneau">Carneau</a>
-		<a href="#zucht">Zucht</a>
-		<a href="#termine">Termine</a>
-		<a href="#kontakt">Kontakt</a>
+	<div class="container">
+		<!-- Hamburger Button -->
+		<button class="menu-toggle" aria-label="Menü öffnen">
+			☰
+		</button>
+
+		<!-- Navigation Links -->
+		<div class="nav-links" id="navMenu">
+			<a href="#ueber-uns">Über uns</a>
+			<a href="#carneau">Carneau</a>
+			<a href="#giertaube">Gier</a>
+			<a href="#termine">Termine</a>
+			<a href="#kontakt">Kontakt</a>
+		</div>
 	</div>
 </nav>
 
@@ -54,12 +63,10 @@
 		<p>
 			Das durchschnittliche Gewicht beträgt bei Männchen 575–600 g und bei Weibchen etwa 550 g. Die
 			Carneau ist bekannt für ihre hohe Fruchtbarkeit und eignet sich gut für die Freilandhaltung.
-
 		</p>
-	</section>
 
-	<section id="zucht">
-		<h2>Zucht & Rassen</h2>
+		<!-- Hier beginnt der frühere "Zucht"-Abschnitt als Unterthema -->
+		<h3 id="zucht">Zucht & Rassen</h3>
 		<p>
 			Die <strong>Carneau-Taube</strong> ist eine fleischige, große Haustaube, die ursprünglich aus der
 			französischen Region Nord-Pas-de-Calais stammt. Sie ist das Ergebnis der Kreuzung mehrerer regionaler
@@ -82,6 +89,26 @@
 		</p>
 	</section>
 
+	<section id="giertaube">
+		<h2>Die Giertaube</h2>
+		<p>
+			Die Giertaube ist eine seltene und traditionsreiche Rasse unter den Haustauben, die insbesondere im süddeutschen Raum sowie in Teilen Österreichs eine lange Zuchtgeschichte vorweisen kann. Ihr Name leitet sich von der ursprünglichen Verwendung ab – der „Gier“ bzw. Gierigkeit, da diese Tauben als besonders futterfreudig und wachstumsstark galten.
+		</p>
+		<p>
+			Typisch für die Giertaube ist ein kräftiger, kompakter Körperbau mit relativ kurzem Hals und einer gerundeten Brust. Der Kopf ist mittelgroß mit einer sanften Stirnlinie. Sie besitzt kräftige Beine und zeigt ein lebhaftes, aber ruhiges Wesen.
+		</p>
+		<p>
+			Das Gefieder der Giertaube ist vielfältig – besonders häufig sind rotfahle, gelbfahle und blaufahle Farbvarianten, mit und ohne Binden. Es gibt aber auch rein weiße oder schwarze Linien. Die Augen sind meist perlfarben, der Schnabel kurz bis mittellang, je nach Zuchtrichtung.
+		</p>
+		<p>
+			Giertauben gelten als widerstandsfähig und gut für die Freilandhaltung geeignet. Sie sind fruchtbar und zeigen ein stark ausgeprägtes Brutverhalten, weshalb sie auch als Ammentauben in der Zucht anderer Rassen verwendet werden.
+		</p>
+		<p>
+			Im Sonderverein Carneau & Giertauben setzen wir uns für den Erhalt dieser selten gewordenen Rasse ein. Durch gezielte Zuchtprogramme und Präsentation auf Ausstellungen möchten wir das Bewusstsein für ihren Wert in der Rassegeflügelzucht stärken.
+		</p>
+	</section>
+
+
 
 	<section id="termine">
 		<h2>Aktuelle Termine</h2>
@@ -94,8 +121,8 @@
 
 	<section id="kontakt">
 		<h2>Kontakt</h2>
-		<p><strong>E-Mail:</strong> <a href="mailto:info@sv-carneau-gier.de">info@sv-carneau-gier.de</a></p>
-		<p><strong>Telefon:</strong> 01234 / 567890</p>
+		<p><strong>E-Mail:</strong> <a href="mailto:info@carneau-gier-sv.de">info@carneau-gier-sv.de</a></p>
+		<p><strong>Telefon:</strong> (Testnummer)01234 / 567890</p>
 	</section>
 </main>
 
