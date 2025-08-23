@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Galerie – Sonderverein Carneau & Giertauben</title>
+
+    <link rel="stylesheet" href="styles/index.css"/>
+
+    <style>
+        /* Galerie Container */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mehrere Spalten, die sich an den Bildschirm anpassen */
+            gap: 16px; /* Abstand zwischen den Bildern */
+            padding: 16px;
+        }
+
+        /* Einzelne Galerie-Elemente */
+        .gallery-item {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Bilder skalieren und füllen den Container */
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Damit die Bilder den Container ausfüllen, ohne das Verhältnis zu verzerren */
+            border-radius: 8px; /* Abgerundete Ecken für das Bild */
+        }
+    </style>
+</head>
+<body>
+<script src="scripts/menu.js"></script>
+<script src="scripts/year.js"></script>
+
+<!-- Header -->
+<header>
+    <div class="container flexbox">
+        <img alt="Carneau und Giertaube" class="flexitem" id="headerimg" src="img/logo.png"/>
+        <div class="flexitem">
+            <div style="align-items: flex-start; display: flex; flex-direction: column; justify-content: flex-start;">
+                <h1>Sonderverein Carneau & Giertaubenzüchter</h1>
+                <h4>mit Betreuung der Züchter französischer Sottobanca</h4>
+            </div>
+            <p id="keywords">Gemeinschaft | Zucht | Leidenschaft</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" aria-label="Menü öffnen">
+            ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="navMenu">
+            <a href="index.html">Startseite</a>
+            <a href="about.html">Über uns</a>
+            <a href="galerie.html" class="active">Galerie</a>
+            <a href="carneau.html">Carneau</a>
+            <a href="gier.html">Gier</a>
+            <a href="sottobanca.html">Sottobanca</a>
+        </div>
+    </div>
+</nav>
+
+<main class="container">
+    <!-- Bildergalerie Section -->
+    <section id="galerie">
+        <h2>Bildergalerie</h2>
+        <p>Willkommen in der Galerie des Sondervereins Carneau & Giertaubenzüchter. Hier finden Sie eine Auswahl an Bildern aus der Zucht und von Veranstaltungen.</p>
+
+        <div class="gallery">
+            <!-- Bilder -->
+            <div class="gallery-item">
+                <img src="img/gallery/11348.jpg" alt="Bild 11348"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/11490.jpg" alt="Bild 11490"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2108@2x.jpg" alt="Bild 2108"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2111@2x.jpg" alt="Bild 2111"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2114@2x.jpg" alt="Bild 2114"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2166@2x.jpg" alt="Bild 2166"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2172@2x.jpg" alt="Bild 2172"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3918@2x.jpg" alt="Bild 3918"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3921@2x.jpg" alt="Bild 3921"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3924@2x.jpg" alt="Bild 3924"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3928.jpg" alt="Bild 3928"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3936.jpg" alt="Bild 3936"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/4442@2x.jpg" alt="Bild 4442"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/4446@2x.jpg" alt="Bild 4446"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/7814@2x.jpg" alt="Bild 7814"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/11350.jpg" alt="Bild 11350"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2106@2x.jpg" alt="Bild 2106"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2109@2x.jpg" alt="Bild 2109"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2112@2x.jpg" alt="Bild 2112"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2119@2x.jpg" alt="Bild 2119"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2169@2x.jpg" alt="Bild 2169"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2206@2x.jpg" alt="Bild 2206"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3919@2x.jpg" alt="Bild 3919"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3922@2x.jpg" alt="Bild 3922"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3925@2x.jpg" alt="Bild 3925"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3930.jpg" alt="Bild 3930"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/4440@2x.jpg" alt="Bild 4440"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/4443@2x.jpg" alt="Bild 4443"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/7725@2x.jpg" alt="Bild 7725"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/7815@2x.jpg" alt="Bild 7815"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2107@2x.jpg" alt="Bild 2107"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/11500.jpg" alt="Bild 2107"/>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/gallery/2110@2x.jpg" alt="Bild 2110"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2113@2x.jpg" alt="Bild 2113"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2130@2x.jpg" alt="Bild 2130"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/2171@2x.jpg" alt="Bild 2171"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/11496.jpg" alt="Bild 3920"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/11488.jpg" alt="Bild 3920"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3920@2x.jpg" alt="Bild 3920"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3923@2x.jpg" alt="Bild 3923"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3926@2x.jpg" alt="Bild 3926"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/3935.jpg" alt="Bild 3935"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/4441@2x.jpg" alt="Bild 4441"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/4445@2x.jpg" alt="Bild 4445"/>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery/7726@2x.jpg" alt="Bild 7726"/>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        &copy; <span id="year"></span> Sonderverein Carneau & Giertaubenzüchter | Alle Rechte vorbehalten
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
